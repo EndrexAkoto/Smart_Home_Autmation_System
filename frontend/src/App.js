@@ -5,6 +5,7 @@ import AboutPage from "./components/AboutPage"
 import ContactPage from "./components/ContactPage"
 import SignInPage from "./components/SignInPage"
 import SignUpPage from "./components/SignUpPage" 
+import Dashboard from "./components/Dashboard"
 import Footer from "./components/Footer"
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/signin" element={<SignInPage />} />
-        <Route path="/signup" element={<SignUpPage />} /> {/* Add route for SignUpPage */}
+        <Route path="/signup" element={<SignUpPage />} /> 
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />
     </Router>
