@@ -1,0 +1,78 @@
+/* About Page Navigation Styles */
+.about-page nav {
+  background-color: #4a148c; /* Deep purple, your theme color */
+  padding: 15px 0;
+  position: fixed; /* Make the navbar fixed at the top */
+  width: 100%; /* Full width */
+  top: 0;
+  z-index: 100; /* Keep navbar on top of content */
+}
+
+.about-page nav ul {
+  list-style: none;
+  display: flex; /* Aligns the list items horizontally */
+  justify-content: center; /* Centers the links */
+  padding: 0;
+  margin: 0;
+}
+
+.about-page nav ul li {
+  margin: 0 20px; /* Space between each link */
+}
+
+.about-page nav ul li a {
+  text-decoration: none;
+  color: white; /* Text color */
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.about-page nav ul li a:hover {
+  color: #f0f0f0; /* Lighter color on hover */
+}
+
+/* About Page Styles */
+.about-page {
+  font-family: Arial, sans-serif;
+  padding: 80px 20px 20px; /* Added padding to account for the fixed navbar */
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.about-page h2 {
+  font-size: 2.5em;
+  color: #4a148c; /* Deep purple */
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.about-page p:first-of-type {
+  font-weight: bold;
+}
+
+.about-page p:last-of-type {
+  margin-bottom: 40px;
+}
+
+.about-page .cta-btn {
+  background-color: #4a148c; /* Deep purple */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-page .cta-btn:hover {
+  background-color: #3b0e72; /* Darker purple for hover effect */
+}

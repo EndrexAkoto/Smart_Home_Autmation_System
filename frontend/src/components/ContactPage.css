@@ -1,0 +1,80 @@
+/* Contact Page Styles */
+
+.contact-page {
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.contact-page h2 {
+  font-size: 2.5em;
+  color: #4a148c; /* Deep purple, your theme color */
+  margin-bottom: 20px;
+}
+
+.contact-page p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-page form label {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.contact-page form button {
+  background-color: #4a148c; /* Deep purple */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-page form button:hover {
+  background-color: #3b0e72; /* Darker purple for hover effect */
+}
+
+/* Navbar Styles */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  background-color: #4a148c; /* Deep purple, your theme color */
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
