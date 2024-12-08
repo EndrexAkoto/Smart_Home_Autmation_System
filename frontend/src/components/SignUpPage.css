@@ -1,0 +1,56 @@
+/* Sign Up Page Styles */
+
+.sign-up-page {
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.sign-up-page h2 {
+  font-size: 2.5em;
+  color: #4a148c; /* Deep purple */
+  margin-bottom: 20px;
+}
+
+.sign-up-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up-page form label {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.sign-up-page form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.sign-up-page form button {
+  background-color: #4a148c; /* Deep purple */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sign-up-page form button:hover {
+  background-color: #3b0e72; /* Darker purple for hover effect */
+}
+
+.sign-up-page p {
+  margin-top: 20px;
+}
+
+.sign-up-page p a {
+  color: #4a148c;
+}

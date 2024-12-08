@@ -1,0 +1,90 @@
+/* Landing Page Styles */
+
+.landing-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #4b0082; /* Deep Purple - your theme color */
+  color: white;
+}
+
+.header .logo {
+  font-size: 1.5em;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header nav ul li {
+  display: inline;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #4b0082; /* Deep Purple */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features ul li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.social-proof {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4b0082; /* Deep Purple */
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
