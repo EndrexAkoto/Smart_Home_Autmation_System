@@ -190,6 +190,11 @@ const Dashboard = () => {
           <li>Keypad: {keypadUsage ? "In Use" : "Idle"}</li>
         </ul>
       </div>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>© 2024 Smart Home Automation. All rights reserved.</p>
+      </footer>
     </div>
   )
 }

@@ -1,23 +1,20 @@
-/* General Landing Page Styles */
+/* Landing Page Styles */
+
 .landing-page {
   font-family: Arial, sans-serif;
   color: #333;
-  padding: 0;
-  margin: 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px;
-  background-color: #4a148c; /* Deep purple */
+  background-color: #4b0082; /* Deep Purple - your theme color */
+  color: white;
 }
 
 .header .logo {
-  font-size: 1.8em;
-  color: white;
-  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .header nav ul {
@@ -36,71 +33,58 @@
   font-weight: bold;
 }
 
-.header nav ul li a:hover {
-  color: #f1f1f1;
-}
-
 .hero {
   text-align: center;
-  background-color: #f1f1f1;
   padding: 50px 20px;
+  background-color: #f4f4f4;
 }
 
 .hero h1 {
   font-size: 3em;
-  color: #4a148c;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.5em;
-}
-
-.features {
-  background-color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.features h2 {
-  font-size: 2.5em;
-  color: #4a148c;
+  font-size: 1.2em;
   margin-bottom: 30px;
 }
 
-.feature-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
+.cta-btn {
+  background-color: #4b0082; /* Deep Purple */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.feature-item {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.features {
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.feature-item:hover {
-  transform: translateY(-10px);
+.features ul {
+  list-style: none;
 }
 
-.feature-item h3 {
-  color: #4a148c;
-  font-size: 1.5em;
+.features ul li {
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 
-.feature-item p {
-  font-size: 1.1em;
+.social-proof {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ddd;
 }
 
 footer {
-  background-color: #4a148c;
-  color: white;
   text-align: center;
   padding: 20px;
-  position: relative;
+  background-color: #4b0082; /* Deep Purple */
+  color: white;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }

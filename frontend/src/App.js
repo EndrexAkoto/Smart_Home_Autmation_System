@@ -6,7 +6,6 @@ import ContactPage from "./components/ContactPage"
 import SignInPage from "./components/SignInPage"
 import SignUpPage from "./components/SignUpPage" 
 import Dashboard from "./components/Dashboard"
-import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path="/signup" element={<SignUpPage />} /> 
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      <Footer />
     </Router>
   )
 }

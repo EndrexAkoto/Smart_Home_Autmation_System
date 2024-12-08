@@ -12,10 +12,18 @@
   justify-content: space-between;
   align-items: center;
   background-color: #4a148c; /* Deep purple */
-  padding: 10px 20px;
+  padding: 20px 40px; /* Increased padding for better spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for navbar visibility */
 }
 
-.profile-notifications {
+.navbar .logo {
+  font-size: 2.5em; /* Larger font size for logo */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase; /* Make logo text uppercase */
+}
+
+.navbar .profile-notifications {
   display: flex;
   align-items: center;
 }
@@ -25,6 +33,7 @@
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .notifications {
@@ -49,6 +58,7 @@
   border-radius: 50%;
 }
 
+/* Dropdown menu for profile pic and notifications */
 .dropdown {
   position: absolute;
   right: 0;
@@ -66,7 +76,7 @@
 }
 
 .dropdown ul li {
-  padding: 5px 0;
+  padding: 10px;
 }
 
 .dropdown ul li a {
@@ -82,6 +92,7 @@
   padding: 5px 0;
 }
 
+/* Header */
 h2 {
   font-size: 2.5em;
   color: #4a148c;
