@@ -1,87 +1,77 @@
-# Smart Home Automation System - Frontend
+/* src/components/AdminPanel.css */
+.admin-panel {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
 
-This repository contains the frontend code for the Smart Home Automation System. The system allows users to manage devices in their smart home, view statistics, and access different settings. It is built using **React.js** and **CSS**.
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #673ab7; /* Deep Purple Theme */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-## Project Structure
+.logo-placeholder {
+  background-color: #512da8;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+}
 
-- `src/`
-  - `components/`
-    - `AdminPanel.js`: Admin panel to manage users and view statistics.
-    - `Dashboard.js`: Main dashboard showing the status of devices like buzzer, curtains, smoke sensor, etc.
-  - `App.js`: The main entry point that renders the navigation and the routing for different pages.
-  - `index.js`: The starting point where the app is rendered to the DOM.
-  - `styles/`
-    - `App.css`: Global CSS file that styles the app.
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-## Features
+.sidebar ul li {
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
 
-- **Admin Panel**: Allows an admin to manage users and change their roles (Admin/User).
-- **Dashboard**: Displays the status of various smart home devices such as buzzer, curtains, smoke sensors, etc.
-- **Responsive Design**: The app is designed to be mobile responsive.
-- **Navbar**: Provides easy navigation between the different sections of the app.
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background-color: #512da8;
+}
 
-## Requirements
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
 
-Before running the frontend, make sure you have the following installed:
+.top-bar {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-- **Node.js** (version 14 or later)
-- **npm** or **yarn**
+.notifications {
+  font-size: 18px;
+  cursor: pointer;
+}
 
-## Setup and Installation
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/your-repository-link.git
-   cd Smart_Home_Automation_Frontend
-
-
-   # Smart Home Automation System - Frontend
-
-This repository contains the frontend code for the Smart Home Automation System. The system allows users to manage devices in their smart home, view statistics, and access different settings. It is built using **React.js** and **CSS**.
-
-## Project Structure
-
-- `src/`
-  - `components/`
-    - `AdminPanel.js`: Admin panel to manage users and view statistics.
-    - `Dashboard.js`: Main dashboard showing the status of devices like buzzer, curtains, smoke sensor, etc.
-    - `Navbar.js`: The navigation bar, which includes links to various sections such as the Dashboard, Admin Panel, etc.
-    - `Footer.js`: Footer component for the application.
-  - `App.js`: The main entry point that renders the navigation and the routing for different pages.
-  - `index.js`: The starting point where the app is rendered to the DOM.
-  - `styles/`
-    - `App.css`: Global CSS file that styles the app.
-
-## Features
-
-- **Admin Panel**: Allows an admin to manage users and change their roles (Admin/User).
-- **Dashboard**: Displays the status of various smart home devices such as buzzer, curtains, smoke sensors, etc.
-- **Responsive Design**: The app is designed to be mobile responsive.
-- **Navbar**: Provides easy navigation between the different sections of the app.
-
-## Requirements
-
-Before running the frontend, make sure you have the following installed:
-
-- **Node.js** (version 14 or later)
-- **npm** or **yarn**
-
-### React Installation
-
-If React is not installed in your environment, you can set up React as follows:
-
-1. Install **create-react-app** globally:
-
-   ```bash
-   npm install -g create-react-app
-
-
-   create-react-app my-app
-cd my-app
-
-
-git clone https://github.com/your-repository-link.git
-cd Smart_Home_Automation_Frontend
-
-
+.tab-content {
+  flex: 1;
+  padding: 20px;
+}
