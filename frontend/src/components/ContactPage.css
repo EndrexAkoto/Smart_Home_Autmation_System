@@ -1,80 +1,110 @@
-/* Contact Page Styles */
-
+/* General page styles */
 .contact-page {
   font-family: Arial, sans-serif;
-  padding: 40px 20px;
+  padding: 20px;
   background-color: #f9f9f9;
   color: #333;
   text-align: center;
 }
 
-.contact-page h2 {
-  font-size: 2.5em;
-  color: #4a148c; /* Deep purple, your theme color */
-  margin-bottom: 20px;
-}
-
-.contact-page p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.contact-page form {
+/* Navbar styles */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-}
-
-.contact-page form label {
-  margin-top: 10px;
-  font-size: 1.1em;
-}
-
-.contact-page form input,
-.contact-page form textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  font-size: 1em;
-  border-radius: 5px;
-}
-
-.contact-page form button {
   background-color: #4a148c; /* Deep purple */
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact-page form button:hover {
-  background-color: #3b0e72; /* Darker purple for hover effect */
-}
-
-/* Navbar Styles */
-.navbar ul {
-  list-style: none;
+/* Logo container */
+.logo-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 0;
-  background-color: #4a148c; /* Deep purple, your theme color */
+  align-items: center;
+  justify-content: flex-start; /* Ensure the logo aligns to the left */
 }
 
-.navbar ul li {
-  display: inline;
+.logo {
+  width: 50px;
+  height: 50px; /* Ensure the logo is square before applying border-radius */
+  border-radius: 50%; /* Makes the logo circular */
+  margin-right: 20px; /* Adjust spacing between the logo and text */
 }
 
-.navbar ul li a {
+.logo-text {
+  font-size: 1.5em;
   color: white;
-  text-decoration: none;
   font-weight: bold;
 }
 
+/* Navbar links */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* Move links to the right */
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
 .navbar ul li a:hover {
-  text-decoration: underline;
+  color: #ddd;
+}
+
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #4a148c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #3b0e72;
+}
+
+/* Footer styles */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #4a148c;
+  color: white;
+  text-align: center;
 }
