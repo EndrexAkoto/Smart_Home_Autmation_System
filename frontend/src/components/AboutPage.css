@@ -1,26 +1,61 @@
-/* About Page Navigation Styles */
-.about-page nav {
-  background-color: #4a148c; /* Deep purple, your theme color */
-  padding: 15px 0;
-  position: fixed; /* Make the navbar fixed at the top */
-  width: 100%; /* Full width */
-  top: 0;
-  z-index: 100; /* Keep navbar on top of content */
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.about-page nav ul {
-  list-style: none;
-  display: flex; /* Aligns the list items horizontally */
-  justify-content: center; /* Centers the links */
+/* Ensure there's no extra space at the top */
+html, body {
+  height: 100%;
   padding: 0;
   margin: 0;
 }
 
-.about-page nav ul li {
-  margin: 0 20px; /* Space between each link */
+/* Header with logo and navigation */
+.about-page header {
+  background-color: #4a148c; /* Deep purple, your theme color */
+  display: flex;
+  justify-content: space-between; /* Space out the logo and links */
+  align-items: center;
+  padding: 10px 20px; /* Reduced padding */
+  width: 100%; /* Ensures full width */
+  margin: 0 auto;
+  /* position: fixed; <-- Removed to allow scrolling */
+  z-index: 100;
 }
 
-.about-page nav ul li a {
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Links inside the header */
+.header-links ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.header-links ul li {
+  margin: 0 20px;
+}
+
+.header-links ul li a {
   text-decoration: none;
   color: white; /* Text color */
   font-size: 1.2em;
@@ -28,14 +63,14 @@
   transition: color 0.3s ease;
 }
 
-.about-page nav ul li a:hover {
+.header-links ul li a:hover {
   color: #f0f0f0; /* Lighter color on hover */
 }
 
-/* About Page Styles */
+/* Adjust About Page content to not be hidden by fixed header */
 .about-page {
   font-family: Arial, sans-serif;
-  padding: 80px 20px 20px; /* Added padding to account for the fixed navbar */
+  padding: 120px 20px 20px; /* Top padding to account for the fixed header */
   background-color: #f9f9f9;
   color: #333;
   text-align: center;
@@ -54,14 +89,6 @@
   margin: 20px auto;
 }
 
-.about-page p:first-of-type {
-  font-weight: bold;
-}
-
-.about-page p:last-of-type {
-  margin-bottom: 40px;
-}
-
 .about-page .cta-btn {
   background-color: #4a148c; /* Deep purple */
   color: white;
@@ -75,4 +102,13 @@
 
 .about-page .cta-btn:hover {
   background-color: #3b0e72; /* Darker purple for hover effect */
+}
+
+/* Footer Styles */
+footer.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4b0082; /* Deep Purple - your theme color */
+  color: white;
+  margin-top: 50px; /* Ensure it's at the bottom */
 }

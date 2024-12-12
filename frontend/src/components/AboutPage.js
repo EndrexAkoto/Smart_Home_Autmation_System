@@ -1,20 +1,28 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import logo from "../images/logo.webp" // Add your logo path here
 import "./AboutPage.css"
 
 const AboutPage = () => {
   return (
     <div className="about-page">
-      {/* Navbar should be here */}
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/contact">Contact Us</Link></li>
-          <li><Link to="/signup">Sign Up</Link></li>
-          <li><Link to="/login">Log In</Link></li>
-        </ul>
-      </nav>
+      {/* Header with logo and navigation links */}
+      <header className="header">
+        <div className="logo-container">
+          <img src={logo} alt="Smart Home Logo" className="logo-image" />
+          <span className="logo-text">Smart Home</span>
+        </div>
+        <div className="header-links">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/signup">Sign Up</Link></li>
+            <li><Link to="/login">Log In</Link></li>
+          </ul>
+        </div>
+      </header>
+
 
       {/* About Us Content */}
       <h2>About Us</h2>
@@ -36,6 +44,11 @@ const AboutPage = () => {
         and we are excited to be part of your journey toward a smarter, safer,
         and more connected home.
       </p>
+
+      {/* Footer Section */}
+      <footer className="footer">
+        <p>© 2024 Smart Home Automation, All Rights Reserved</p>
+      </footer>
     </div>
   )
 }

@@ -42,6 +42,7 @@
 .hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  color: #4b0082; /* Deep Purple - your theme color */
 }
 
 .hero p {
@@ -60,17 +61,54 @@
 }
 
 .features {
-  padding: 50px 20px;
   text-align: center;
 }
 
-.features ul {
-  list-style: none;
+.features h2 {
+  color: #4b0082; /* Deep Purple - your theme color */
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-.features ul li {
-  font-size: 1.2em;
-  margin: 10px 0;
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* Adjust size as needed */
+  border-radius: 15px; /* Adds rounded corners to images */
+}
+
+/* Apply theme color to feature titles (h3) */
+.feature-item h3 {
+  color: #4b0082; /* Deep Purple - your theme color */
+}
+
+.logo-image {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Circular shape */
+}
+
+/* For responsive layout, stack features on small screens */
+@media (max-width: 768px) {
+  .feature-list {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    margin-bottom: 20px;
+  }
 }
 
 .social-proof {
@@ -84,7 +122,18 @@ footer {
   padding: 20px;
   background-color: #4b0082; /* Deep Purple */
   color: white;
-  position: absolute;
-  bottom: 0;
+  position: relative; /* Allow it to follow the document flow */
   width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
 }
