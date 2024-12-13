@@ -1,0 +1,47 @@
+/* Logout.css */
+.logout-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.logout-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.logout-btn, .cancel-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-btn {
+  background-color: #2c0063; /* Deep Purple */
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #44008e; /* Darker Purple */
+}
+
+.cancel-btn {
+  background-color: #ddd;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}
