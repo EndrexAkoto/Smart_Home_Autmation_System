@@ -1,5 +1,4 @@
-/* Sign In Page Styles */
-
+/* General Page Styles */
 .sign-in-page {
   font-family: Arial, sans-serif;
   padding: 40px 20px;
@@ -8,12 +7,14 @@
   text-align: center;
 }
 
+/* Header and Title */
 .sign-in-page h2 {
   font-size: 2.5em;
   color: #4a148c; /* Deep purple */
   margin-bottom: 20px;
 }
 
+/* Form Styles */
 .sign-in-page form {
   display: flex;
   flex-direction: column;
@@ -55,15 +56,22 @@
   color: #4a148c;
 }
 
-/* Navbar styles */
+/* Navbar Styles */
 .sign-in-page .navbar {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a148c; /* Deep purple background */
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .sign-in-page .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 20px;
 }
 
@@ -72,11 +80,40 @@
 }
 
 .sign-in-page .navbar ul li a {
-  color: #4a148c; /* Deep purple */
+  color: white; /* White links */
   text-decoration: none;
   font-weight: bold;
 }
 
 .sign-in-page .navbar ul li a:hover {
-  color: #3b0e72; /* Darker purple */
+  color: #ddd; /* Light purple when hovering */
+}
+
+/* Logo container for alignment */
+.sign-in-page .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in-page .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover; /* Ensures the logo fits within the circle */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.sign-in-page .logo-text {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #4a148c;
+  color: white;
+  text-align: center;
 }

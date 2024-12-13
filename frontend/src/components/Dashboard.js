@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import "./Dashboard.css"
+import logo from "../images/logo.webp"
 
 const Dashboard = () => {
   const [temperature, setTemperature] = useState(22) // Thermostat temperature state
@@ -76,50 +77,61 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      {/* Navbar with profile and notifications */}
-      <div className="navbar">
-        <div className="profile-notifications">
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleProfilePicChange}
-            id="uploadProfilePic"
-            style={{ display: "none" }}
-          />
-          <label htmlFor="uploadProfilePic">
-            <img
-              src={profilePic}
-              alt="Profile"
-              className="profile-pic"
-              onClick={toggleDropdown}
-            />
-          </label>
-          <div className="notifications">
-            <button className="notif-btn" onClick={toggleDropdown}>
-              🔔 {unreadCount > 0 && <span className="notif-count">{unreadCount}</span>}
-            </button>
-            {dropdownVisible && (
-              <div className="dropdown">
-                <ul>
-                  <li><Link to="/settings">Settings</Link></li>
-                  <li><Link to="/logout">Log Out</Link></li>
-                  <li>
-                    <h4>Notifications</h4>
-                    {notifications.map((notification, index) => (
-                      <div key={index}>
-                        <span>{notification}</span>
-                        {!notification.startsWith("[Read]") && (
-                          <button onClick={() => readNotification(index)}>Mark as Read</button>
-                        )}
-                      </div>
-                    ))}
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
+      {/* Header section with logo, notifications, and profile */}
+      <header className="header">
+  <div className="logo">
+    <img src={logo} alt="../images/logo.webp" className="logo-image" />
+  </div>
+
+  <div className="header-right">
+    {/* Notifications Bell */}
+    <div className="notifications">
+      <button className="notif-btn" onClick={toggleDropdown}>
+        🔔 {unreadCount > 0 && <span className="notif-count">{unreadCount}</span>}
+      </button>
+      {dropdownVisible && (
+        <div className="dropdown">
+          <h4>Notifications</h4>
+          {notifications.map((notification, index) => (
+            <div key={index}>
+              <span>{notification}</span>
+              {!notification.startsWith("[Read]") && (
+                <button onClick={() => readNotification(index)}>Mark as Read</button>
+              )}
+            </div>
+          ))}
         </div>
-      </div>
+      )}
+    </div>
+
+    {/* Profile Picture & Dropdown with Settings and Log Out */}
+    <div className="profile-notifications">
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleProfilePicChange}
+        id="uploadProfilePic"
+        style={{ display: "none" }}
+      />
+      <label htmlFor="uploadProfilePic">
+        <img
+          src={profilePic}
+          alt="Profile"
+          className="profile-pic"
+          onClick={toggleDropdown}
+        />
+      </label>
+      {dropdownVisible && (
+        <div className="profile-dropdown">
+          <ul>
+            <li><Link to="/settings">Settings</Link></li>
+            <li><Link to="/logout">Log Out</Link></li>
+          </ul>
+        </div>
+      )}
+    </div>
+  </div>
+</header>
 
       <h2>User Dashboard</h2>
 
@@ -179,21 +191,21 @@ const Dashboard = () => {
       </div>
 
       {/* System Status */}
-      <div className="system-status">
-        <h3>System Status</h3>
-        <ul>
-          <li>Lights: {lightsStatus}</li>
-          <li>Thermostat: {temperature}°C</li>
-          <li>Motion Detected: {motionDetected ? "Yes" : "No"}</li>
-          <li>Smoke Sensor: {smokeSensorStatus}</li>
-          <li>RGB Lights Brightness: {rgbBrightness}%</li>
-          <li>Keypad: {keypadUsage ? "In Use" : "Idle"}</li>
-        </ul>
-      </div>
+        <div class="system-status">
+    <h3>System Status</h3>
+    <ul>
+      <li><span class="status-label">Lights:</span> <span class="status-value status-off">Off</span></li>
+      <li><span class="status-label">Thermostat:</span> <span class="status-value status-temperature">22°C</span></li>
+      <li><span class="status-label">Motion Detected:</span> <span class="status-value status-off">No</span></li>
+      <li><span class="status-label">Smoke Sensor:</span> <span class="status-value status-off">No Smoke</span></li>
+      <li><span class="status-label">RGB Lights Brightness:</span> <span class="status-value status-brightness">50%</span></li>
+      <li><span class="status-label">Keypad:</span> <span class="status-value status-idle">Idle</span></li>
+    </ul>
+  </div>
 
-      {/* Footer */}
+      {/* Footer with centered copyright */}
       <footer className="footer">
-        <p>© 2024 Smart Home Automation. All rights reserved.</p>
+        <p style={{ textAlign: "center" }}>© 2024 Smart Home Automation. All rights reserved.</p>
       </footer>
     </div>
   )

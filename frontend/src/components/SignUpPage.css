@@ -1,6 +1,5 @@
-/* Sign Up Page Styles */
-
-.sign-up-page {
+/* General Page Styles */
+.sign-in-page {
   font-family: Arial, sans-serif;
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -8,24 +7,26 @@
   text-align: center;
 }
 
-.sign-up-page h2 {
+/* Header and Title */
+.sign-in-page h2 {
   font-size: 2.5em;
   color: #4a148c; /* Deep purple */
   margin-bottom: 20px;
 }
 
-.sign-up-page form {
+/* Form Styles */
+.sign-in-page form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sign-up-page form label {
+.sign-in-page form label {
   margin-top: 10px;
   font-size: 1.1em;
 }
 
-.sign-up-page form input {
+.sign-in-page form input {
   width: 80%;
   padding: 10px;
   margin: 10px 0;
@@ -33,7 +34,7 @@
   border-radius: 5px;
 }
 
-.sign-up-page form button {
+.sign-in-page form button {
   background-color: #4a148c; /* Deep purple */
   color: white;
   padding: 10px 20px;
@@ -43,14 +44,74 @@
   border-radius: 5px;
 }
 
-.sign-up-page form button:hover {
+.sign-in-page form button:hover {
   background-color: #3b0e72; /* Darker purple for hover effect */
 }
 
-.sign-up-page p {
+.sign-in-page p {
   margin-top: 20px;
 }
 
-.sign-up-page p a {
+.sign-in-page p a {
   color: #4a148c;
+}
+
+/* Navbar Styles */
+.sign-in-page .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #4a148c; /* Deep purple background */
+  padding: 10px 40px;
+}
+
+.sign-in-page .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.sign-in-page .navbar ul li {
+  display: inline;
+}
+
+.sign-in-page .navbar ul li a {
+  color: white; /* White links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-in-page .navbar ul li a:hover {
+  color: #ddd; /* Light purple when hovering */
+}
+
+/* Logo container for alignment */
+.sign-in-page .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in-page .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover; /* Ensures the logo fits within the circle */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.sign-in-page .logo-text {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #4a148c;
+  color: white;
+  text-align: center;
 }

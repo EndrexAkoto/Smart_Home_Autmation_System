@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import "./SignInPage.css"
+import logo from "../images/logo.webp" // Make sure the logo path is correct
 
 const SignInPage = () => {
   const [email, setEmail] = useState("")
@@ -14,7 +15,12 @@ const SignInPage = () => {
 
   return (
     <div className="sign-in-page">
+      {/* Navbar */}
       <div className="navbar">
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />
+          <span className="logo-text">Smart Home</span>
+        </div>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
@@ -23,6 +29,8 @@ const SignInPage = () => {
           <li><Link to="/signin">Log In</Link></li>
         </ul>
       </div>
+
+      {/* Main Content */}
       <h2>Sign In</h2>
       <form onSubmit={handleSubmit}>
         <label>Email:</label>
@@ -44,8 +52,14 @@ const SignInPage = () => {
       <p>
         Don't have an account? <Link to="/signup">Sign Up</Link>
       </p>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>&copy; 2024 Smart Home Automation. All rights reserved.</p>
+      </footer>
     </div>
   )
 }
 
 export default SignInPage
+  
